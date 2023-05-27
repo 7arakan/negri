@@ -1,13 +1,120 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 100%;
+  height: 640px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app {
+  background: rgb(235, 255, 184);
+  position: absolute;
+  width: 470px;
+  height: 315px;
+  margin-top: 100px;
+  border: 2px solid black;
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header{
+  background: rgb(209, 255, 92);
+  color: black;
+  width: 450px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 8px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.header-clicked{
+  background: rgb(255, 70, 70);
+  color: white;
+  width: 450px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 20px;
+  border: 2px solid rgb(0, 0, 0);
+}
+.container2{
+  background: rgb(209, 255, 92);
+  width: 450px;
+  height: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-left: 8px;
+}
+.block{
+  width: 230px;
+  height: 180px;
+  background: rgb(235, 255, 184);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.block-clicked{
+  width: 230px;
+  height: 180px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.ul{
+  background: rgb(235, 255, 184);
+  width: 180px;
+  height: 180px;
+  list-style-type: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ul>li{
+  
+  color: rgb(0, 0, 0);
+}
+.ul-clicked{
+  background: rgb(235, 255, 184);
+  width: 180px;
+  height: 180px;
+  list-style-type: none;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.ul-clicked>li{
+  background: rgb(207, 255, 85);
+  color: rgb(195, 92, 255);;
+}
+.headerH{
+  transition: 0.5s;
 }
